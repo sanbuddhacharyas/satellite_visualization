@@ -18,7 +18,7 @@ default_args = {
 
 # Define the DAG
 dag = DAG(
-    'update_google_sheet_with_sat_data',
+    'satelite_visualizer',
     default_args=default_args,
     description='Run app.py every 15 minutes',
     schedule_interval='*/15 * * * *',
@@ -41,14 +41,17 @@ run_app_task = PythonOperator(
     dag=dag,
 )
 
+# Start task as DummyOperator
 start_task = DummyOperator(
     task_id='start',
     dag=dag,
 )
 
+# End task as DummpyOperator
 end_task = DummyOperator(
     task_id='end',
     dag=dag,
 )
 
+# Create a DAG
 start_task >> run_app_task >> end_task

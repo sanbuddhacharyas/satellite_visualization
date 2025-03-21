@@ -2,7 +2,8 @@ from ny2o_api_caller import api_caller
 from sheets_updater import GSheet
 from parse_api_responses import combine_sat_lat_long
 
-spreadsheet_id = '1SriNNkVd2gF-MCL9dtD53cyx7B5cMNiDCTSPHtN4ab8'
+# Change this google sheet ID
+spreadsheet_id = '10U89gdiETQ62vXc2ypvipX3gjoR0pFvLoDznqAcYM0A'
 
 def main():
     google_sheet = GSheet(spreadsheet_id)
