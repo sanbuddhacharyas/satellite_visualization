@@ -1,7 +1,14 @@
 
-# Satelite Visualizer
+# Satellite Visualizer
 
 This repository includes code to create an Airflow DAG that imports real-time data from an API, transforms it, and exports the processed data to a Google Sheet for visualization through Looker.
+<div align="center">
+    <img src="images/ETL.png" alt="Image description" width="500" />
+    <img src="images/satellite_visualization.png" alt="Image description" width="500" height="300" />
+</div>
+
+Live Visualization: [here](https://lookerstudio.google.com/reporting/a67cd1c9-4a5e-47a0-aa1c-06cc813a64d6)
+
 
 ## Prerequisites
 - Python 3.10 or later
