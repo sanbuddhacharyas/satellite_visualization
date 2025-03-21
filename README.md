@@ -82,3 +82,16 @@ Change `spreadsheet_id=<Google Sheet ID>`
 For example: https://docs.google.com/spreadsheets/d/1SriNNkVd2gF-MCL9dtD53cyx7B5cMNiDCTSPHtN4ab8/edit?gid=2137809253#gid=2137809253
 
 `spreadsheet_id = 1SriNNkVd2gF-MCL9dtD53cyx7B5cMNiDCTSPHtN4ab8`
+
+## Looker Visualization
+Now that our data is in Google Sheets, the final step is to explore how Looker can present it in a visually appealing way. Looker, a powerful visualization and analytics tool from Google, allows you to connect to various data sources and create dashboards, charts, and reports.
+
+Start by opening Looker Studio, which is easily accessible through your Gmail, just like other Google services. When prompted, select Google Sheets as the data source, and choose the sheet where your data is stored. Make sure to select the sheet containing the actual data (if you followed my setup, this would be the ‘sat_info’ sheet).
+
+Looker will automatically generate some default charts using your data, but we’re aiming to create a map visualization. First, remove all the default charts. Then, add a Google Map bubble visualizer to showcase your data effectively.
+
+My configuration:
+
+<div align="center">
+    <img src="images/looker.png" alt="Image description" height="500" />
+</div>
